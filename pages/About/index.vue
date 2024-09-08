@@ -1,26 +1,39 @@
 <template>
-    <div class="bg-gradient-to-b from-[#810f2a] to-[#222] text-white p-8 lg:p-16">
-      <div class="max-w-7xl mx-auto  pt-10">
-        <!-- Header Section -->
-        <div class="text-center lg:text-left">
-          <h1 class="text-4xl lg:text-6xl font-bold mb-4">The Story of Sofi Records</h1>
-          <h2 class="text-2xl lg:text-3xl font-light mb-8">The Visionary Behind Sofi Records</h2>
-        </div>
-  
-        <!-- Content Section -->
-        <div class="lg:flex lg:items-center lg:justify-between">
-          <div class="lg:w-2/3 mb-8 pt-0 lg:mb-0">
-            <p class="text-lg lg:text-3xl leading-relaxed text-gray-300">
-              Sofi Records was founded by Sultan Nuri, a visionary in the Ethiopian music industry
-              whose passion for music and commitment to innovation have shaped the company’s journey.
-            </p>
-          </div>
-          <div class="lg:w-1/3">
+
+
+    <div class="bg-gradient-to-b from-[#FF3600] to-[#343333] text-white p-8 lg:p-16">
+      <div class="max-w-7xl mx-auto  pt-10 lg:flex lg:justify-between">
+        <!-- About Hero Section Conents-->
+         <div class="mt-10">
+          <!-- Heading Title Section -->
+            <div class="text-center lg:text-left">
+              <h1 class="text-4xl lg:text-6xl font-bold mb-4">The Story of Sofi Records</h1>
+              <h2 class="text-2xl lg:text-3xl font-light mb-8">The Visionary Behind Sofi Records</h2>
+            </div>
+            <div class="lg:flex lg:items-center lg:justify-between">
+            <!-- Content Section -->
+              <div class="lg:w-2/3 mb-8 pt-0 lg:mb-0">
+                <p class="text-lg lg:text-3xl leading-relaxed text-gray-300">
+                  Sofi Records was founded by Sultan Nuri, a visionary in the Ethiopian music industry
+                  whose passion for music and commitment to innovation have shaped the company’s journey.
+                </p>
+              </div>
+            </div>
+      </div>
+        <!-- About Hero Section Image-->
+
+        <div class="lg:w-full">
             <img src="../../public/Aboutme.png" alt="Sultan Nuri in Studio" class="rounded-lg shadow-lg w-full" />
           </div>
-        </div>
       </div>
     </div>
+
+
+
+
+
+
+
 
     <!-- Foundation information -->
     <div class="bg-gray-900 text-gray-200 p-8 lg:p-16">

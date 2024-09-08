@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between items-center p-4 bg-[#2A2727] text-white">
+  <header class="flex justify-between items-center p-4 bg-[#000] text-white">
     <div class="logo">
       <h2 class="font-bold text-xl">LOGO</h2>
     </div>
@@ -36,7 +36,7 @@
 
     <!-- Navigation links -->
     <nav 
-      :class="`flex-col md:flex-row ${isOpen ? 'flex' : 'show'} md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-6 text-xl justify-center items-center absolute md:static top-16 md:top-auto left-0 right-0 md:left-auto bg-[#2A2727] md:bg-transparent p-4 md:p-0`"
+      :class="`flex-col md:flex-row ${isOpen ? 'flex' : 'show'} md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-6 text-xl justify-center items-center absolute md:static top-16 md:top-auto left-0 right-0 md:left-auto bg-[#FF3600] md:bg-transparent p-4 md:p-0`"
     >
       <NuxtLink to="/" class="">Home</NuxtLink>
       <NuxtLink to="/about" class="">About</NuxtLink>
@@ -44,10 +44,12 @@
       <NuxtLink to="/Events" class="">Events</NuxtLink>
       <NuxtLink to="/Portfolio" class="">Portfolio</NuxtLink>
       <NuxtLink to="/Blog" class="">Blog</NuxtLink> 
+      
+      
       <NuxtLink to="/Contact">
 
 
-        <button class="bg-[#CE253F] hover:bg-black-700 text-white font-bold py-2 px-4 rounded">
+        <button class="bg-[#FF3600] hover:bg-black-700 text-white font-bold py-2 px-4 rounded">
           Contact Me
         </button>
         

@@ -1,33 +1,22 @@
 <template>
-    <div class="">
+
+    <div class="space-y-8  ">
+
+
       <HeroSection/>
-  
-      <!-- Hero Section -->
-      <ServiceSection/>
-      <!-- About Section -->
-    <AboutSection/>
-  
-      <!-- Clients Section -->
-    <Clients/>
-  
-      <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio py-16">
+      <ServiceandAbout/>
+      <Clients/>
+      <Portfolio/>
+      <TestimonialSection/>
 
-
-      </section>
-  
-      <!-- Testimonials Section -->
-<TestimonialSection/>
-  
-    <!-- Latest Blog Posts Section -->
-
-<section id="blog" class="latest-blog py-16">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Latest Blog Posts</h2>
+<div class="lg:w-[86%] md:w-[95%] w-[97%] mx-auto ">
+<section id="blog" class="latest-blog py-16 lg:mx-14">
+  <div class="lg:w-[86%] md:w-[95%] w-[97%] mx-auto  ">
+    <h2 class="text-3xl font-bold text-center mb-8">Latest <span class="text-[#FF3600]">Blog</span> Posts</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Blog Card 1-->
 
-      <a href="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
+      <NuxtLink to="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
         <img src="../public/photoOne.png" alt="Blog Post" class="w-full h-48 object-cover mb-4 rounded">
         <div class="flex-grow">
@@ -36,11 +25,11 @@
           <div class="text-gray-400 text-sm">Date | 5 min read</div>
         </div>
       </div>
-    </a>
+      </NuxtLink>
 
       <!-- Blog Card 2-->
 
-    <a href="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
+    <NuxtLink href="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
 
         <img src="../public/PhotoTwo.png" alt="Blog Post" class="w-full h-48 object-cover mb-4 rounded">
@@ -50,11 +39,11 @@
           <div class="text-gray-400 text-sm">Date | 5 min read</div>
         </div>
       </div>
-    </a>
+    </NuxtLink>
 
       <!-- Blog Card 3-->
 
-    <a href="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
+    <NuxtLink href="/blog/specific-blog-page.html" class="bg-white p-6 rounded-lg shadow-md flex flex-col hover:shadow-lg transition-shadow duration-300" aria-label="Read More about Blog Title"> 
       <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
         <img src="../public/PhotoTHree.png" alt="Blog Post" class="w-full h-48 object-cover mb-4 rounded">
         <div class="flex-grow">
@@ -63,30 +52,19 @@
           <div class="text-gray-400 text-sm">Date | 5 min read</div>
         </div>
       </div>
-    </a>
+    </NuxtLink>
     </div>
     <!-- Subscribe Blog Button -->
-    <div class="text-center mt-8">
-      <h3 class="text-xl font-semibold mb-4">Subscribe to Our Blog</h3>
-      <form class="flex flex-col sm:flex-row justify-center gap-2">
-        <input type="email" placeholder="Enter your email" class="p-2 border border-gray-300 rounded-l-lg max-w-xs flex-1">
-        
-  <button type="submit" class="py-2 px-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out">Subscribe</button>
-      </form>
-    </div>
+ 
   </div>
 </section>
-
-
-
-
-      <!-- Events Section -->
-
-      <UpcomingEvents/>
-      <Awards/>
+<UpcomingEvents/>
+</div>
+<Awards/>
   
 
     </div>
+
   </template>
   
   <script>

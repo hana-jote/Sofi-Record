@@ -23,5 +23,7 @@ logs
 .env.*
 !.env.example
 
-
+.information.txt
 .history
+
+components/ContentinAboutSection.vue

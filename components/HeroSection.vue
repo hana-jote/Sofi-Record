@@ -1,14 +1,14 @@
 <template>
-  <section class=" relative flex items-center justify-start h-[60vh] lg:h-screen  px-4 md:px-8 bg-cover bg-center bg-no-repeat hero-section">
-    <div class="max-w-full md:max-w-xl lg:max-w-2xl text-white z-20 ml:5 md:ml-[63px]  ">
-      <h1 class="text-4xl md:text-4xl lg:text-7xl font-bold mb-4 md:leading-20 ">Crafting
+  <section class=" relative flex items-center justify-start h-[60vh] lg:h-screen  bg-cover bg-center bg-no-repeat hero-section ">
+    <div class="max-w-full md:max-w-xl lg:max-w-2xl text-white z-20 ml:5 md:ml-36 lg:ml-40 ">
+      <h1 class="text-6xl text-center md:text-4xl md:text-left lg:text-7xl lg:md:text-4xl font-bold mb-4 md:leading-20 ">Crafting
        Soundscapes That Elevate Your Music Experience
       </h1>
       <p class="text-base md:text-lg lg:text-xl mb-6 text-gray-300 leading-relaxed">
         Discover the artistry and innovation behind sound—where every beat tells a story and every track is a masterpiece.
       </p>
       <NuxtLink to="/About">
-      <button class="py-2 px-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">Learn More</button>
+      <button class="py-2 px-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-[#FF3600] rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">Learn More</button>
       </NuxtLink>
 
     </div>
@@ -24,31 +24,8 @@ export default {
 
 <style scoped>
 .hero-section {
-  background-image: url('../public/hero-img.jpg');
+  background-image: url('/HeroImage.png');
 }
 
-/* .content {
-  @apply ;
-} */
 
-/* .hero-heading {
-  @apply ;
-}
-
-.hero-paragraph {
-  @apply ;
-}
-
-.hero-button {
-  @apply ;
-}
-
-.mic-image {
-  @apply fixed top-[-70px] right-[-4.5rem] w-24 h-[6rem] md:w-32 lg:w-40 z-10;
-  @apply  ;
-} */
-
-.hero-section::before {
-  @apply absolute inset-0 bg-black bg-opacity-50 z-10;
-}
 </style>

@@ -4,10 +4,10 @@
   <!--  -->
 
   <template>
-    <section id="carousel" class="relative overflow-hidden py-16  bg-zinc-300">
+    <section id="carousel" class="relative overflow-hidden py-16  bg-[#14141E]">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text mb-8 text-white">Our Clients</h2>
-        <div class="relative overflow-hidden">
+        <h2 class="text-3xl md:text-4xl font-bold text mb-8 ml-[150px]">Our <span class="text-[#FF3600]">Clients</span> </h2>
+        <div class="relative overflow-hidden mx-8">
           <!-- Carousel Wrapper -->
           <div class="carousel flex gap-60 animate-slide">
             <!-- Carousel Images -->

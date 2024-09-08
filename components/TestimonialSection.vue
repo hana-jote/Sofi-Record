@@ -1,130 +1,78 @@
 <template>
-  <section id="testimonials" class="relative overflow-hidden py-16 bg-black">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-white">Testimonials</h2>
-      <div class="relative overflow-hidden">
-        <!-- Carousel Wrapper -->
-        <div class="carousel flex animate-slide">
-          <!-- Testimonial Items -->
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 1" class="w-200 h-200 object-cover rounded-full mr-4 border-black">
-              <div>
-                <p class="mt-4 text-center text-xl text-black">"Great service, highly recommend!"</p>
-                <p class=" text-gray-800 text-lg">Customer A</p>
-                <p class=" text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
+  <section id="testimonials" class=" relative overflow-hidden py-16 bg-[#14141E] ">
+    <div class="lg:w-[80%] mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8 "><span class="text-[#FF3600]">Peoples</span> Feedback</h2>
+      <!-- Swiper component for automatic sliding -->
+      <swiper 
+        :slides-per-view="2" 
+        :space-between="10" 
+        loop 
+        :autoplay="{ delay: 1000, disableOnInteraction: false }"
+        speed="500"
+      >
+        <!-- Testimonial 1 -->
+        <swiper-slide>
+          <div class="testimonial-card">
+            <img src="../public/AbrhamWolde.jpeg" alt="Testimonial 1" class="testimonial-img">
+            <p class="text-xl text-[#fff] mb-2 text-center">My experience with this man has been exceptional.</p>
+            <p class="text-lg font-bold text-[#fff]">Abraham Wolde</p>
+            <p class="text-gray-300">Director/Producer · Balageru Records</p>
           </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 2" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center text-xl text-black" >"Amazing experience, will come back again."</p>
-                <p class=" text-gray-800 text-lg">Customer B</p>
-                <p class="text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 3" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center text-xl  text-black">"Exceptional service and support."</p>
-                <p class="text-gray-800 text-lg">- Customer C</p>
-                <p class="text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 4" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center text-xl text-black">"Very satisfied with the results."</p>
-                <p class=" text-gray-800 text-lg">- Customer D</p>
-                <p class=" text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
-          </div>
+        </swiper-slide>
 
-          <!-- Duplicate Items for Seamless Loop -->
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-zinc-800 p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 1" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center">"Great service, highly recommend!"</p>
-                <p class=" text-gray-800 text-lg"> Customer A</p>
-                <p class=" text-gray-800"> Director/Producer · Balageru Records</p>
-              </div>
-            </div>
+        <!-- Testimonial 2 -->
+        <swiper-slide>
+          <div class="testimonial-card">
+            <img src="../public/Person1.jpeg" alt="Testimonial 2" class="testimonial-img">
+            <p class="text-xl text-[#fff] mb-2 text-center">It has been amazing working with this talented person.</p>
+            <p class="text-lg font-bold text-[#fff]">Eden Taye</p>
+            <p class="text-gray-300">Singer/Producer · ETV</p>
           </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 2" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center">"Amazing experience, will come back again."</p>
-                <p class=" text-gray-800 text-lg">Customer B</p>
-                <p class=" text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
+        </swiper-slide>
+
+        <!-- Testimonial 3 -->
+        <swiper-slide>
+          <div class="testimonial-card">
+            <img src="../public/Personal2.jpg" alt="Testimonial 3" class="testimonial-img">
+            <p class="text-xl text-white mb-2 text-center">Highly professional and extremely talented!</p>
+            <p class="text-lg font-bold text-white">Bethel Biruk</p>
+            <p class="text-gray-300">Songwriter/Composer · Sofi Records</p>
           </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 3" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center">"Exceptional service and support."</p>
-                <p class="text-gray-800 text-lg">Customer C</p>
-                <p class="text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-1/2 px-2">
-            <div class="bg-white p-4 rounded-lg shadow-lg flex items-center">
-              <img src="../public/mic down.png" alt="Testimonial 4" class="w-200 h-200 object-cover rounded-full mr-4">
-              <div>
-                <p class="mt-4 text-center">"Very satisfied with the results."</p>
-                <p class=" text-gray-800 text-lg">Customer D</p>
-                <p class=" text-lg text-gray-800">Director/Producer · Balageru Records</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        </swiper-slide>
+      </swiper>
     </div>
   </section>
 </template>
 
+<script>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/swiper-bundle.css';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+};
+</script>
 
 <style scoped>
-/* Custom CSS for continuous sliding animation */
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.carousel {
+.testimonial-card {
+  background-color:#14141E;
+  padding: 2rem;
+  border-radius: 0.5rem;
   display: flex;
-  width: 200%; /* Width doubled to fit both original and duplicated images */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.animate-slide {
-  animation: slide 25s linear infinite; /* Adjust timing for smooth sliding */
-}
-
-/* Styles for testimonial cards */
-.bg-white {
-  padding: 4rem; /* Adjust padding to increase the card height */
-  min-height: 20rem; /* Minimum height for the card */
-}
-
-img {
-  border-radius: 50%; /* Circular image */
-  width: 4rem; /* Adjust width of the image */
-  height: 4rem; /* Adjust height of the image */
-  object-fit: cover; /* Ensure image covers the circle */
+.testimonial-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 </style>

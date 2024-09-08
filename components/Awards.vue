@@ -1,8 +1,8 @@
 <!-- Awards Section -->
 <template>
-  <section id="awards" class="relative overflow-hidden py-16 bg-zinc-300">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8 text-white">Awards & Recognitions</h2>
+  <section id="awards" class="relative overflow-hidden py-16 bg-[#14141E]">
+    <div class="w-[86%] mx-auto ">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8 text-white ml-10">Awards & Recognitions</h2>
       <div class="relative overflow-hidden">
         <!-- Carousel Wrapper -->
         <div class="carousel flex gap-4 animate-slide">

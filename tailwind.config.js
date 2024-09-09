@@ -13,7 +13,11 @@ export default {
       colors:{
         primary:'#CE253F',
         secondary:'#2A2727',
-        tertiary:'#FFFFFF'
+        tertiary:'#FFFFFF',
+        'custom-green': '#10B981',
+  
+        'custom-white': '#D9D9D9',
+        'custom-gray': '#B3B3B3',
 
       },
       lineHeight: {
